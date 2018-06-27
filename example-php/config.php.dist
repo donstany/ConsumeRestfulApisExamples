@@ -1,0 +1,8 @@
+<?php
+return [
+    'email' => 'EMAIL',
+    'password' => 'PWD',
+    'auth' => 'https://api.example.com/api/v1/auth',
+    'wss' => 'wss://wss.example.com/WSGateway',
+    'connection_timeout' => 120,
+];

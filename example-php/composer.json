@@ -1,0 +1,14 @@
+{
+    "name": "dev/openapi-php-example",
+    "type": "project",
+    "minimum-stability": "dev",
+    "require": {
+        "textalk/websocket": "dev-master",
+        "guzzlehttp/guzzle": "^6.3@dev"
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "php -r \"copy('config.php.dist', 'config.php');\""
+        ]
+    }
+}

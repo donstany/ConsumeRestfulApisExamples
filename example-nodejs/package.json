@@ -1,0 +1,23 @@
+{
+  "name": "openapi",
+  "version": "1.0.0",
+  "description": "openapi auth test",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/y-morozov/openapi.git"
+  },
+  "author": "George M",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/y-morozov/openapi/issues"
+  },
+  "homepage": "https://github.com/y-morozov/openapi#readme",
+  "dependencies": {
+    "request": "^2.87.0",
+    "ws": "^5.2.0"
+  }
+}
