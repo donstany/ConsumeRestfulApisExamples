@@ -15,7 +15,7 @@ request.post({
         'password': config.password
     }
 }, (error, response, body) => {
-    console.log('error:', error);
+ console.log('error:', error);
     console.log('statusCode:', response && response.statusCode);
 
     let res = JSON.parse(body);
@@ -81,6 +81,20 @@ request.post({
                 "i": 0,
                 "n": 'GetInstruments',
                 "o": '{"OMSId":1}'
+            }));
+
+            // Requesting quotes list
+            // wss.send(JSON.stringify({
+            //     "m": 0,
+            //     "i": 0,
+            //     "n": 'SubscribeLevel2',
+            //     "o": '{"OMSId":1, "Symbol": "BCHBTC" , "Depth": 10 }'
+            // }));
+            wss.send(JSON.stringify({
+                "m": 0,
+                "i": 0,
+                "n": 'SubscribeLevel1',
+                "o": '{"OMSId":1,  "InstrumentId": 7 }'
             }));
 
         });
